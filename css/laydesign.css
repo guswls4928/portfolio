@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+}
+header{
+    height: 100vh;
+    background-color: #fff;
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.video_back{
+    position: relative;
+}
+.video_back video {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border: none;
+}
+.intro_text{
+    background-color: rgba(255,255,255,.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.details{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+h1{
+    margin: 0;
+}
+section{
+    height: 500vh;
+    background-color: #fff;
+}
+.information{
+    height: 50vh;
+}
+.skill{
+    height: 150vh;
+}
+.project{
+    height: 300vh;
+}
+footer{
+    height: 30vh;
+    background-color: rgb(95, 95, 95);
+    color: #fff;
+}
+.intro{
+    padding-top: 42.5vh;
+    font-size: 7vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+::-webkit-scrollbar{
+    display: none;
+}
