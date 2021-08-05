@@ -132,11 +132,11 @@ i{
 }
 section{
     z-index: 2;
-    height: 500vh;
+    height: 400vh;
     background-color: #fff;
 }
 .about{
-    height: 500px;
+    height: 100VH;
 }
 .about-main{
     text-align: center;
@@ -146,19 +146,44 @@ section{
 }
 .information{
     margin-top: 3vh;
-    margin-left: 3vh;
+    margin-left: 15vh;
+    font-size: 1.7vh;
+    line-height: 180%;
 }
 .skill{
     height: 150vh;
+    background-color: #fafafa;
+    text-align: center;
+    left: 5vw;
+    right: 5vw;
+}
+.skill-area1{
+    width: 70vh;
+    margin: 0 auto;
+}
+.familiar, .tried{
+    height: 10vh;
+    width: 10vh;
+    border-radius: 30px;
+    background-size: 100%;
+    box-shadow: 0.5vh 0.5vh 20px grey;
+    display: inline-block;
+    margin: 1vh;
+}
+/* .familiar:hover{
+    
+} */
+h2{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 .project{
-    height: 300vh;
+    height: 150vh;
 }
 footer{
     z-index: 3;
-    height: 30vh;
-    background-color: rgb(95, 95, 95);
-    color: #fff;
+    height: 100vh;
+    background-color: #fafafa;
 }
 ::-webkit-scrollbar{
     display: none;

@@ -17,12 +17,12 @@ $(document).ready(function(){
     });
     $(".li-project").click(function(){
         $(function(){
-            $("html, body").animate({ scrollTop: windowheigh*2.5}, "slow"); 
+            $("html, body").animate({ scrollTop: windowheigh*4.5}, "slow"); 
         });
     });
     $(".li-contact").click(function(){
         $(function(){
-            $("html, body").animate({ scrollTop: 0 }, "slow"); 
+            $("html, body").animate({ scrollTop: windowheigh*6}, "slow"); 
         });
     });
 });
