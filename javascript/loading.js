@@ -1,10 +1,7 @@
-$(window).on('beforeunload', function() {
-    $(window).scrollTop(0);
-});
-
 if($(window).load()){
     setTimeout(function(){
         $(".gauge").animate({ width: '39.4vh' }, "50");
+        $(window).scrollTop(0);
         setTimeout(function(){
             $("#before").css({
                 "opacity": "0"
