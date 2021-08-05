@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="desciption" content="상업적인 용도가 아닌 개인용 포트폴리오로 무단 복제는 삼가주시기 바랍니다.">
+    <meta name="keywords" content="포트폴리오">
+    <meta name="author" content="hyeon-jinhyeok">
+    <link href="image/icon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="javascript/nav.js"></script>
+    <script src="javascript/scroll.js"></script>
+    <title>현진혁의 포트폴리오</title>
+    <link href="css/laydesign.css" rel="stylesheet" type="text/css" />
+    <script>
+        $(window).on('beforeunload', function() {
+            $(window).scrollTop(0); 
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="introback" style="opacity: 1;"></div>
+        <div class="details">
+            <div class="detail-left">
+                <strong id="left-text" style="margin-left:5vh;margin-top:3vh;">jinhyeok's portfolio</strong>
+                <button onclick="gohome()" id="left-img" style="opacity: 0;">
+                </button>
+            </div>
+            <div class="detail-right">
+                <div class="right-text">
+                    web publisher
+                </div>
+                <ul class="scrollmenu" style="transform: matrix(1,0,0,1,70,0);">
+                    <li class="li-home">
+                        <img src="image/home.svg" alt="home">
+                    </li>
+                    <li class="li-about">
+                        <img src="image/about.svg" alt="about">
+                    </li>
+                    <li class="li-project">
+                        <img src="image/project.svg" alt="project">
+                    </li>
+                    <li class="li-contact">
+                        <img src="image/contact.svg" alt="contact">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <h1 class="intro" style="opacity: 1;" id="intro1">
+            <i id="dancing-script">Carpe diem</i> <br>
+            오늘에 최선을 다해라
+        </h1>
+        <h1 class="intro" style="opacity: 0;" id="intro2">
+            Thanks to your visit <br>
+            Have a nice day
+        </h1>
+    </header>
+    <section>
+        <article class="information">
+            about me
+        </article>
+        <article class="skill">
+            skills
+        </article>
+        <article class="project">
+            project
+        </article>
+    </section>
+    <footer>
+        contact
+    </footer>
+</body>
+</html>
