@@ -28,6 +28,9 @@ $(document).ready(function(){
             $(".scrollmenu").css({
                 "transform" : "matrix(1,0,0,1,70,0)"
             });
+            $(".about-main").css({
+                "transform" : "matrix(1,0,0,1,0,0)"
+            });
             if(!!document.getElementById('intro1')==false){
                 $("header").append('<h1 class="intro" style="opacity: 0;" id="intro1"><i id="dancing-script">Carpe diem</i><br>오늘에 최선을 다해라</h1>');
             };
@@ -63,6 +66,9 @@ $(document).ready(function(){
             $(".scrollmenu").css({
                 "transform" : "matrix(1,0,0,1,"+((((windowheigh*1.2)-$(window).scrollTop())/(windowheigh/215))+70)+",0)"
             });
+            $(".about-main").css({
+                "transform" : "matrix(1,0,0,1,0,"+(((windowheigh*1.2)-$(window).scrollTop())/(windowheigh/100))+")"
+            });
             if(!!document.getElementById('intro1')==false){
                 $("header").append('<h1 class="intro" style="opacity: 0;" id="intro1"><i id="dancing-script">Carpe diem</i><br>오늘에 최선을 다해라</h1>');
             };
@@ -73,6 +79,9 @@ $(document).ready(function(){
         if($(window).scrollTop()>=(windowheigh*1.5)){
             $(".scrollmenu").css({
                 "transform" : "matrix(1,0,0,1,5,0)"
+            });
+            $(".about-main").css({
+                "transform" : "matrix(1,0,0,1,0,-30)"
             });
             $("#intro2").css({
                 "opacity": '0',

@@ -12,12 +12,12 @@ $(document).ready(function(){
     });
     $(".li-about").click(function(){
         $(function(){
-            $("html, body").animate({ scrollTop: windowheigh*1.5}, "slow"); 
+            $("html, body").animate({ scrollTop: windowheigh*2}, "slow"); 
         });
     });
     $(".li-project").click(function(){
         $(function(){
-            $("html, body").animate({ scrollTop: 0 }, "slow"); 
+            $("html, body").animate({ scrollTop: windowheigh*2.5}, "slow"); 
         });
     });
     $(".li-contact").click(function(){

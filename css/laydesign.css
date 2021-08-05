@@ -5,11 +5,6 @@
     left: 0;
     right: 0;
     bottom: 0;
-    -ms-user-select: none;
-    -moz-user-select: -moz-none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    user-select:none;
 }
 header{
     height: 200vh;
@@ -20,6 +15,11 @@ header{
     background-image: url(../image/clouds.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    user-select:none;
 }
 .introback{
     background-color: rgba(255,255,255,.5);
@@ -135,9 +135,18 @@ section{
     height: 500vh;
     background-color: #fff;
 }
-.information{
-    height: 50vh;
+.about{
+    height: 500px;
+}
+.about-main{
     text-align: center;
+    font-size: 4vh;
+    font-weight: bold;
+    color: black;
+}
+.information{
+    margin-top: 3vh;
+    margin-left: 3vh;
 }
 .skill{
     height: 150vh;
