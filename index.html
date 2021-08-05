@@ -13,17 +13,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="javascript/nav.js"></script>
-    <script src="javascript/scroll.js"></script>
+    <script src="javascript/nav.js?after"></script>
+    <script src="javascript/scroll.js?after"></script>
+    <script src="javascript/loading.js?after"></script>
     <title>현진혁의 포트폴리오</title>
-    <link href="css/laydesign.css" rel="stylesheet" type="text/css" />
-    <script>
-        $(window).on('beforeunload', function() {
-            $(window).scrollTop(0); 
-        });
-    </script>
+    <link href="css/laydesign.css?after" rel="stylesheet" type="text/css" />
+    <link href="css/loading.css?after" rel="stylesheet" type="text/css" />
 </head>
 <body>
+    <div class="loading">
+        <div class="loading-bar">
+            <div class="gauge"></div>
+        </div>
+        <div class="loading-text" id="before">
+            웹 사이트 로딩 중...
+        </div>
+        <div class="loding-text" id="done">
+            사이트 로딩 완료
+        </div>
+    </div>
     <header>
         <div class="introback" style="opacity: 1;"></div>
         <div class="details">

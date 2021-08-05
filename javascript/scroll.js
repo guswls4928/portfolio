@@ -31,6 +31,9 @@ $(document).ready(function(){
             if(!!document.getElementById('intro1')==false){
                 $("header").append('<h1 class="intro" style="opacity: 0;" id="intro1"><i id="dancing-script">Carpe diem</i><br>오늘에 최선을 다해라</h1>');
             };
+            if(!!document.getElementById('intro2')==false){
+                $("header").append('<h1 class="intro" style="opacity: 0;" id="intro2">Thanks to your visit<br>Have a nice day</h1>');
+            };
         };
         if (((windowheigh*1.2) <= $(window).scrollTop())&&($(window).scrollTop()<=(windowheigh*1.5))){
             var opavalue = (((windowheigh*1.2)-$(window).scrollTop())/(windowheigh*0.2))+1;
@@ -66,7 +69,6 @@ $(document).ready(function(){
             if(!!document.getElementById('intro2')==false){
                 $("header").append('<h1 class="intro" style="opacity: 0;" id="intro2">Thanks to your visit<br>Have a nice day</h1>');
             };
-            $(".intro").remove("#intro1");
         };
         if($(window).scrollTop()>=(windowheigh*1.5)){
             $(".scrollmenu").css({
@@ -77,6 +79,7 @@ $(document).ready(function(){
                 "padding-top": '0',
                 "width": '0'
             });
+            $(".intro").remove("#intro1");
             $(".intro").remove("#intro2");
         };
         if($(window).scrollTop()>=(windowheigh*1.5)){
