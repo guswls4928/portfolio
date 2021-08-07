@@ -170,9 +170,32 @@ section{
     display: inline-block;
     margin: 1vh;
 }
-/* .familiar:hover{
-    
-} */
+.skillhover{
+    height: 6vh;
+    width: 10vh;
+    border-radius: 30px;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    padding-top: 4vh;
+    size: 1vh;
+    background-color: rgb(0, 0, 0, .8);
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+.familiar:hover .skillhover,
+.tried:hover .skillhover{
+    opacity: 1;
+    animation: fadein .1s;
+}@keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 h2{
     padding-top: 5vh;
     padding-bottom: 5vh;
