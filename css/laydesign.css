@@ -136,13 +136,14 @@ section{
     background-color: #fff;
 }
 .about{
-    height: 100VH;
+    height: 100vh;
 }
 .about-main{
     text-align: center;
-    font-size: 4vh;
+    font-size: 6vh;
     font-weight: bold;
-    color: black;
+    color: #fff;
+    text-shadow: -2px 0 #3d77c1, 0 2px #3d77c1, 2px 0 #3d77c1, 0 -2px #3d77c1
 }
 .information{
     margin-top: 3vh;
@@ -156,8 +157,13 @@ section{
     text-align: center;
     left: 5vw;
     right: 5vw;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    user-select:none;
 }
-.skill-area1{
+.skill-area{
     width: 70vh;
     margin: 0 auto;
 }
@@ -197,6 +203,7 @@ section{
 }
 
 h2{
+    font-size: 3vh;
     padding-top: 5vh;
     padding-bottom: 5vh;
 }
@@ -207,6 +214,17 @@ footer{
     z-index: 3;
     height: 100vh;
     background-color: #fafafa;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    user-select:none;
+    text-align: center;
+}
+.contact{
+    display: inline-block;
+    margin-top: 40%;
+    width: 70%;
 }
 ::-webkit-scrollbar{
     display: none;
