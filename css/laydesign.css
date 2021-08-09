@@ -5,6 +5,10 @@
     left: 0;
     right: 0;
     bottom: 0;
+    vertical-align: baseline;
+    -webkit-text-size-adjust: none;
+    font-style: normal;
+    box-sizing: border-box;
 }
 header{
     height: 200vh;
@@ -177,7 +181,7 @@ section{
     margin: 1vh;
 }
 .skillhover{
-    height: 6vh;
+    height: 10vh;
     width: 10vh;
     border-radius: 30px;
     display: inline-block;
@@ -214,18 +218,56 @@ footer{
     z-index: 3;
     height: 100vh;
     background-color: #fafafa;
-    -ms-user-select: none;
-    -moz-user-select: -moz-none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    user-select:none;
     text-align: center;
 }
 .contact{
     display: inline-block;
-    margin-top: 40%;
+    margin-top: 50vh;
     width: 70%;
+    font-size: 3vh;
 }
+.email{
+    margin: 45vh 0 40vh;
+}
+.icon{
+    cursor: pointer;
+    content: url(../image/copy.svg);
+    width: 3vh;
+    height: 3vh;
+}
+.etc{
+    position: relative;
+    max-width: 1600px;
+    font-size: 15px;
+    margin: 0 auto;
+    padding: 0 65px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media screen and (max-width: 979px){
+    .footer__inner{
+        font-size:14px;
+        padding:0 30px 34px;
+    }
+}
+@media screen and (max-width:639px){
+    .footer__inner{
+        font-size:12px;
+        flex-direction:column;
+    }
+}
+.github{
+    width: 60px;
+    height: 60px;
+    content: url(../image/github.png);
+}
+.copyright{
+    color: #aaa;
+    margin-left: 100px;
+}
+/* .phone{
+} */
 ::-webkit-scrollbar{
     display: none;
 }

@@ -1,6 +1,6 @@
 if($(window).load()){
     setTimeout(function(){
-        $(".gauge").animate({ width: '39.4vh' }, "50");
+        $(".gauge").animate({ width: '39vh' }, "50");
         setTimeout(function(){
             $("#before").css({
                 "opacity": "0"
